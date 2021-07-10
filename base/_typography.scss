@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+body {
+  font-family: roboto;
+}
+
+h1 {
+  font-family: roboto-bold;
+}
+
+h2 {
+  font-family: roboto-bold;
+  font-size: 1.8em;
+}
+// #fonctionnement_text {
+//   font-family: roboto-bold;
+// }
+
+figcaption {
+  font-size: 1.3em;
+  font-family: roboto-bold;
+}
+
+@media (max-width: 480px) {
+  #place input {
+    font-size: 1.3em;
+    // font-family:roboto;
+  }
+}

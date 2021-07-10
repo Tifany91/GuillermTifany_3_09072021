@@ -1,0 +1,25 @@
+.exploration_button {
+  width: 210px;
+  color: white;
+  font-size: 1.2em;
+  background: linear-gradient(to bottom right, $secondary, $primary);
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
+  padding: 1em 1.4em 1em 1.4em;
+  margin-bottom: 1.5em;
+}
+
+.fbutton {
+  width: 250px;
+  font-size: 1.2em;
+  background-color: $lightgrey;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.etape {
+  background: $primary;
+  border-radius: 50px;
+}
