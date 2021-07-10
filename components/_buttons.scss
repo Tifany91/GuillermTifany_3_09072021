@@ -10,16 +10,27 @@
 }
 
 .fbutton {
-  width: 250px;
+  // width: 300px;
+  display: flex;
+  justify-content: space-around;
   font-size: 1.2em;
   background-color: $lightgrey;
   border-radius: 25px;
   box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
   padding: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
 }
 
 .etape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   background: $primary;
   border-radius: 50px;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -4em;
 }

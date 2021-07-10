@@ -25,18 +25,31 @@ h2 {
   font-family: roboto-bold;
   font-size: 1.8em;
 }
-// #fonctionnement_text {
-//   font-family: roboto-bold;
-// }
+
+.fbutton {
+  font-family: roboto-bold;
+}
 
 figcaption {
   font-size: 1.3em;
   font-family: roboto-bold;
 }
+figure p {
+  font-size: 1.4em;
+}
+#place input {
+  font-size: 1.3em;
+  // font-family:roboto;
+}
 
-@media (max-width: 480px) {
-  #place input {
+.footer {
+  font-size: 1.3em;
+  &__menu {
+    font-family: roboto-bold;
+  }
+  &__title {
     font-size: 1.3em;
-    // font-family:roboto;
+    color: white;
+    font-family: shrikhand;
   }
 }
