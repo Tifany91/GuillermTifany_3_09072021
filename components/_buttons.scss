@@ -7,6 +7,10 @@
   box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
   padding: 1em 1.4em 1em 1.4em;
   margin-bottom: 1.5em;
+  &:hover {
+    transition-duration: 500ms;
+    box-shadow: 3px 3px 10px -1px darken(rgb(150, 148, 148), 20%);
+  }
 }
 
 .fbutton {
@@ -21,6 +25,14 @@
   margin-bottom: 1.5em;
   margin-left: 1em;
   position: relative;
+  &:hover {
+    transition-duration: 500ms;
+    background-color: lighten($lightgrey, 2%);
+    box-shadow: 3px 3px 10px -1px darken(rgb(199, 197, 197), 10%);
+    i {
+      color: $primary;
+    }
+  }
 
   i {
     color: grey;

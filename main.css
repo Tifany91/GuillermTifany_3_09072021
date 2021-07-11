@@ -79,6 +79,13 @@ figure p {
   margin-bottom: 1.5em;
 }
 
+.exploration_button:hover {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-box-shadow: 3px 3px 10px -1px #636161;
+          box-shadow: 3px 3px 10px -1px #636161;
+}
+
 .fbutton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +101,18 @@ figure p {
   margin-bottom: 1.5em;
   margin-left: 1em;
   position: relative;
+}
+
+.fbutton:hover {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 3px 3px 10px -1px #aeabab;
+          box-shadow: 3px 3px 10px -1px #aeabab;
+}
+
+.fbutton:hover i {
+  color: #9356dc;
 }
 
 .fbutton i {
@@ -234,8 +253,44 @@ figure p {
   margin: 0.2em 0 0 0;
 }
 
-.restaurants__card figure i {
+.heart_container {
+  position: relative;
+  width: 3em;
+  height: 3em;
+}
+
+.empty_heart {
+  position: absolute;
   color: grey;
+}
+
+.full_heart {
+  position: absolute;
+  color: #9356dc;
+  opacity: 0;
+}
+
+.full_heart:hover {
+  -webkit-animation: remplissage 500ms ease-out;
+          animation: remplissage 500ms ease-out;
+}
+
+@-webkit-keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .footer {
