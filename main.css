@@ -34,6 +34,11 @@ h2 {
   font-family: roboto-bold;
 }
 
+.nouveaute {
+  font-family: roboto-bold;
+  font-size: 1em;
+}
+
 figcaption {
   font-size: 1.3em;
   font-family: roboto-bold;
@@ -47,16 +52,11 @@ figure p {
   font-size: 1.3em;
 }
 
-.footer {
-  font-size: 1.3em;
-}
-
 .footer__menu {
   font-family: roboto-bold;
 }
 
 .footer__title {
-  font-size: 1.3em;
   color: white;
   font-family: shrikhand;
 }
@@ -170,6 +170,17 @@ figure p {
   -webkit-box-shadow: 3px 3px 10px -1px #969494;
           box-shadow: 3px 3px 10px -1px #969494;
   margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.restaurants__card .nouveaute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  color: #278870;
+  background-color: #99e2d0;
+  padding: 0.5em;
 }
 
 .restaurants__card figure img {
@@ -189,7 +200,7 @@ figure p {
   float: right;
 }
 
-footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +215,11 @@ footer {
   padding: 2em;
 }
 
-footer .footer__menu {
+.footer__title {
+  margin-bottom: 1em;
+}
+
+.footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,8 +232,17 @@ footer .footer__menu {
           align-items: center;
 }
 
-footer i {
+.footer i {
   margin-right: 0.6em;
+}
+
+.footer p {
+  margin: 0 0 0.5em 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
 html,

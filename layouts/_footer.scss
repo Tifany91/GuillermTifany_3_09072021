@@ -1,16 +1,29 @@
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: white;
   background: rgba(53, 53, 53, 255);
   padding: 2em;
-  .footer__menu {
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__menu {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   i {
     margin-right: 0.6em;
+  }
+  p {
+    margin: 0 0 0.5em 0;
+  }
+  a {
+    text-decoration: none;
+    color: white;
   }
 }

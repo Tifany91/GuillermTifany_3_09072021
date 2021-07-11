@@ -17,20 +17,35 @@
     background: white;
     box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
     margin-bottom: 1em;
+    cursor: pointer;
+
+    .nouveaute {
+      // display: block;
+      // float: right;
+      display: flex;
+      position: absolute;
+      color: darken($tertiary, 40%);
+      background-color: $tertiary;
+      padding: 0.5em;
+    }
+
     figure {
       img {
         width: 100%;
         height: 35vh;
         object-fit: cover;
       }
+
       p {
         color: rgba(96, 96, 96, 255);
         margin: 0.2em 0 0 0;
       }
     }
+
     i {
       display: block;
       float: right;
+      // position: absolute;
     }
   }
 }

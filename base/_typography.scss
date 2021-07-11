@@ -30,6 +30,11 @@ h2 {
   font-family: roboto-bold;
 }
 
+.nouveaute {
+  font-family: roboto-bold;
+  font-size: 1em;
+}
+
 figcaption {
   font-size: 1.3em;
   font-family: roboto-bold;
@@ -43,12 +48,12 @@ figure p {
 }
 
 .footer {
-  font-size: 1.3em;
+  // font-size: 2em;
   &__menu {
     font-family: roboto-bold;
   }
   &__title {
-    font-size: 1.3em;
+    // font-size: 1.3em;
     color: white;
     font-family: shrikhand;
   }
