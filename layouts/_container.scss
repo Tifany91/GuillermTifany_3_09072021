@@ -10,29 +10,45 @@
   background: $lightgrey;
   padding: 1.5em;
 
+  a {
+    text-decoration: none;
+  }
+
   &__card {
     border-radius: 20px;
     overflow: hidden;
     height: 300px;
     background: white;
     box-shadow: 3px 3px 10px -1px rgb(150, 148, 148);
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     cursor: pointer;
+    position: relative;
+
+    &__description {
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+    }
 
     .nouveaute {
-      // display: block;
-      // float: right;
+      width: 6em;
+      height: 2em;
       display: flex;
       position: absolute;
-      color: darken($tertiary, 40%);
+      color: darken($tertiary, 38%);
       background-color: $tertiary;
-      padding: 0.5em;
+      justify-content: center;
+      align-items: center;
+      top: 1em;
+      right: 1em;
     }
 
     figure {
+      margin: 0;
+
       img {
         width: 100%;
-        height: 35vh;
+        height: 30vh;
         object-fit: cover;
       }
 
@@ -40,12 +56,9 @@
         color: rgba(96, 96, 96, 255);
         margin: 0.2em 0 0 0;
       }
-    }
-
-    i {
-      display: block;
-      float: right;
-      // position: absolute;
+      i {
+        color: grey;
+      }
     }
   }
 }

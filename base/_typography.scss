@@ -38,23 +38,23 @@ h2 {
 figcaption {
   font-size: 1.3em;
   font-family: roboto-bold;
+  color: black;
 }
 figure p {
   font-size: 1.4em;
 }
 #place input {
   font-size: 1.3em;
-  // font-family:roboto;
+  font-family: roboto;
 }
 
 .footer {
-  // font-size: 2em;
-  &__menu {
-    font-family: roboto-bold;
-  }
+  font-size: 1.3em;
   &__title {
-    // font-size: 1.3em;
-    color: white;
     font-family: shrikhand;
   }
+}
+
+.p-bold {
+  font-family: roboto-bold;
 }
