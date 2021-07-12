@@ -12,9 +12,6 @@
     box-shadow: 3px 3px 10px -1px darken(rgb(150, 148, 148), 20%);
     cursor: pointer;
   }
-  @include desktop-only {
-    margin-top: 2.5em;
-  }
 }
 
 .fbutton {
@@ -27,7 +24,7 @@
   margin-bottom: 1.5em;
   margin-left: 1em;
   position: relative;
-  @include desktop-only {
+  @include deskandtab {
     display: inline-flex;
     width: 300px;
     margin-right: 2.5em;

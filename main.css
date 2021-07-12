@@ -118,12 +118,6 @@ figure p {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
-  .exploration_button {
-    margin-top: 2.5em;
-  }
-}
-
 .fbutton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +134,7 @@ figure p {
   position: relative;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .fbutton {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -241,12 +235,14 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    background-color: white;
-    margin: 2.5em;
-    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1em 2.5em 1em 2.5em;
+    padding: 0.5em;
     border: 1px solid #a09d9d;
     width: 250px;
-    height: 50px;
+    height: auto;
     border-radius: 50px;
   }
 }
@@ -258,9 +254,41 @@ header {
   background-color: #eaeaea;
 }
 
-@media screen and (min-width: 1200px) {
-  #place input {
-    background-color: white;
+@media (max-width: 1200px) {
+  #presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f6f6f6;
+    padding: 2.4em;
+  }
+  #presentation h1 {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 0 0.5em 0.5em 0.5em;
+  }
+  #presentation p {
+    color: #7d7d7d;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #presentation {
+    margin: 1em 2.5em 1em 2.5em;
+  }
+  #presentation h1 {
+    margin: 0;
   }
 }
 
@@ -268,9 +296,10 @@ header {
   padding: 1.5em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   #fonctionnement {
-    margin: 2.5em;
+    margin: 1em 2.5em 1em 2.5em;
+    padding: 0;
   }
 }
 
@@ -287,7 +316,7 @@ header {
   padding: 1.5em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,11 +352,25 @@ header {
   position: relative;
 }
 
+.restaurants__card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
 @media screen and (min-width: 1200px) {
   .restaurants__card {
     width: 270px;
     height: 220px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .restaurants__card {
+    margin-bottom: 2em;
   }
 }
 
@@ -366,14 +409,14 @@ header {
 
 .restaurants__card figure img {
   width: 100%;
-  height: 30vh;
+  height: 210px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media screen and (min-width: 1200px) {
   .restaurants__card figure img {
-    height: 25vh;
+    height: 150px;
   }
 }
 
@@ -492,40 +535,5 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-}
-
-@media (max-width: 480px) {
-  #presentation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f6f6f6;
-    padding: 2.4em;
-  }
-  #presentation h1 {
-    font-size: 1.9em;
-    text-align: center;
-    margin: 0 0.5em 0.5em 0.5em;
-  }
-  #presentation p {
-    color: #7d7d7d;
-    font-size: 1.4em;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1.5em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #presentation {
-    margin: 2.5em;
-  }
 }
 /*# sourceMappingURL=main.css.map */
