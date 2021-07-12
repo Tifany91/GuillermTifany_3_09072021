@@ -27,3 +27,9 @@ body {
     }
   }
 }
+
+#presentation {
+  @include desktop-only {
+    margin: 2.5em;
+  }
+}

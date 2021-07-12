@@ -25,6 +25,12 @@ h1 {
   font-family: roboto-bold;
 }
 
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
 h2 {
   font-family: roboto-bold;
   font-size: 1.8em;
@@ -32,6 +38,13 @@ h2 {
 
 .fbutton {
   font-family: roboto-bold;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .fbutton {
+    font-size: 1em;
+  }
 }
 
 .nouveaute {
@@ -45,8 +58,20 @@ figcaption {
   color: black;
 }
 
+@media screen and (min-width: 1200px) {
+  figcaption {
+    font-size: 1em;
+  }
+}
+
 figure p {
   font-size: 1.4em;
+}
+
+@media screen and (min-width: 1200px) {
+  figure p {
+    font-size: 1em;
+  }
 }
 
 #place input {
@@ -56,6 +81,12 @@ figure p {
 
 .footer {
   font-size: 1.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    font-size: 1em;
+  }
 }
 
 .footer__title {
@@ -84,6 +115,13 @@ figure p {
           transition-duration: 500ms;
   -webkit-box-shadow: 3px 3px 10px -1px #636161;
           box-shadow: 3px 3px 10px -1px #636161;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .exploration_button {
+    margin-top: 2.5em;
+  }
 }
 
 .fbutton {
@@ -92,7 +130,6 @@ figure p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 1.2em;
   background-color: #f6f6f6;
   border-radius: 25px;
   -webkit-box-shadow: 3px 3px 10px -1px #c7c5c5;
@@ -103,12 +140,23 @@ figure p {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .fbutton {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 300px;
+    margin-right: 2.5em;
+  }
+}
+
 .fbutton:hover {
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
   background-color: #fbfbfb;
   -webkit-box-shadow: 3px 3px 10px -1px #aeabab;
           box-shadow: 3px 3px 10px -1px #aeabab;
+  cursor: pointer;
 }
 
 .fbutton:hover i {
@@ -142,41 +190,88 @@ figure p {
   left: -0.5em;
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 1200px) {
+  .etape {
+    width: 2.5em;
+    height: 2.5em;
+    bottom: 0.7em;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid white;
+  -webkit-box-shadow: 0 7px 7px -9px grey;
+          box-shadow: 0 7px 7px -9px grey;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-bottom: 2px solid white;
-    -webkit-box-shadow: 0 7px 7px -9px grey;
-            box-shadow: 0 7px 7px -9px grey;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    position: relative;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-left: 2.5em;
   }
+}
+
+#place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2em;
+  background-color: #eaeaea;
+}
+
+@media screen and (min-width: 1200px) {
   #place {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1.2em;
-    background-color: #eaeaea;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    background-color: white;
+    margin: 2.5em;
+    padding: 0;
+    border: 1px solid #a09d9d;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
   }
+}
+
+#place input {
+  border: 0px;
+  margin-left: 1em;
+  width: 8em;
+  background-color: #eaeaea;
+}
+
+@media screen and (min-width: 1200px) {
   #place input {
-    border: 0px;
-    margin-left: 1em;
-    width: 8em;
-    background-color: #eaeaea;
+    background-color: white;
   }
 }
 
 #fonctionnement {
   padding: 1.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  #fonctionnement {
+    margin: 2.5em;
+  }
 }
 
 .restaurants {
@@ -190,6 +285,26 @@ figure p {
           flex-direction: column;
   background: #f6f6f6;
   padding: 1.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 2.5em;
+    padding: 2.5em;
+  }
 }
 
 .restaurants a {
@@ -206,6 +321,14 @@ figure p {
   margin-bottom: 1.5em;
   cursor: pointer;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants__card {
+    width: 270px;
+    height: 220px;
+    margin: 0;
+  }
 }
 
 .restaurants__card__description {
@@ -246,6 +369,12 @@ figure p {
   height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants__card figure img {
+    height: 25vh;
+  }
 }
 
 .restaurants__card figure p {
@@ -293,6 +422,15 @@ figure p {
   }
 }
 
+@media (min-width: 1200px) {
+  .restaurants__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,8 +446,20 @@ figure p {
   padding: 1.5em;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 1em 1.5em 1em 2.5em;
+  }
+}
+
 .footer__title {
   margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    font-size: 1.3em;
+  }
 }
 
 .footer__menu {
@@ -370,6 +520,12 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #presentation {
+    margin: 2.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */

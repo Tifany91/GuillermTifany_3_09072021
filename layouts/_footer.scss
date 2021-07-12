@@ -5,9 +5,15 @@
   color: white;
   background: rgba(53, 53, 53, 255);
   padding: 1.5em;
+  @include desktop-only {
+    padding: 1em 1.5em 1em 2.5em;
+  }
 
   &__title {
     margin-bottom: 1em;
+    @include desktop-only {
+      font-size: 1.3em;
+    }
   }
 
   &__menu {

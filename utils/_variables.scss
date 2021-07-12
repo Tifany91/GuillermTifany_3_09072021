@@ -2,3 +2,7 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $lightgrey: rgba(246, 246, 246, 255);
+$breakpoints: (
+  mobile: 450px,
+  desktop: 1200px,
+);

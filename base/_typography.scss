@@ -19,6 +19,9 @@ body {
 
 h1 {
   font-family: roboto-bold;
+  @include desktop-only {
+    font-size: 2em;
+  }
 }
 
 h2 {
@@ -28,6 +31,10 @@ h2 {
 
 .fbutton {
   font-family: roboto-bold;
+  font-size: 1.2em;
+  @include desktop-only {
+    font-size: 1em;
+  }
 }
 
 .nouveaute {
@@ -39,9 +46,15 @@ figcaption {
   font-size: 1.3em;
   font-family: roboto-bold;
   color: black;
+  @include desktop-only {
+    font-size: 1em;
+  }
 }
 figure p {
   font-size: 1.4em;
+  @include desktop-only {
+    font-size: 1em;
+  }
 }
 #place input {
   font-size: 1.3em;
@@ -50,6 +63,9 @@ figure p {
 
 .footer {
   font-size: 1.3em;
+  @include desktop-only {
+    font-size: 1em;
+  }
   &__title {
     font-family: shrikhand;
   }
