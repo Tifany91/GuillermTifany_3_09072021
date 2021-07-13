@@ -1,34 +1,33 @@
-@media (max-width: 1200px) {
-  #presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $lightgrey;
-    padding: 2.4em;
+#presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lightgrey;
+  padding: 2.4em;
 
-    h1 {
-      font-size: 1.9em;
-      text-align: center;
-      margin: 0 0.5em 0.5em 0.5em;
-    }
+  h1 {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 0 0.5em 0.5em 0.5em;
+  }
 
-    p {
-      color: rgba(125, 125, 125, 255);
-      font-size: 1.4em;
-      text-align: center;
-      margin: 0;
-      margin-bottom: 1.5em;
-    }
+  p {
+    color: rgba(125, 125, 125, 255);
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.5em;
   }
 }
-@media (min-width: 1200px) {
-  #presentation {
-    margin: 1em 2.5em 1em 2.5em;
-    h1 {
-      margin: 0;
-    }
-  }
-}
+
+// @media (min-width: 1200px) {
+//   #presentation {
+//     margin: 1em 2.5em 1em 2.5em;
+//     h1 {
+//       margin: 0;
+//     }
+//   }
+// }
 
 #fonctionnement {
   padding: 1.5em;
@@ -152,5 +151,11 @@
   .restaurants__title {
     display: flex;
     width: 100%;
+  }
+
+  .fontionnement__title {
+    display: flex;
+    width: 100%;
+    margin-left: 2.5em;
   }
 }

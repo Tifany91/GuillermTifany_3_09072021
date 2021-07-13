@@ -141,6 +141,7 @@ figure p {
     display: inline-flex;
     width: 300px;
     margin-right: 2.5em;
+    margin-left: 2em;
   }
 }
 
@@ -209,9 +210,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   header {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -232,9 +230,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   #place {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -254,42 +249,33 @@ header {
   background-color: #eaeaea;
 }
 
-@media (max-width: 1200px) {
-  #presentation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f6f6f6;
-    padding: 2.4em;
-  }
-  #presentation h1 {
-    font-size: 1.9em;
-    text-align: center;
-    margin: 0 0.5em 0.5em 0.5em;
-  }
-  #presentation p {
-    color: #7d7d7d;
-    font-size: 1.4em;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1.5em;
-  }
+#presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  padding: 2.4em;
 }
 
-@media (min-width: 1200px) {
-  #presentation {
-    margin: 1em 2.5em 1em 2.5em;
-  }
-  #presentation h1 {
-    margin: 0;
-  }
+#presentation h1 {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 0 0.5em 0.5em 0.5em;
+}
+
+#presentation p {
+  color: #7d7d7d;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1.5em;
 }
 
 #fonctionnement {
@@ -471,6 +457,13 @@ header {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+  }
+  .fontionnement__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 2.5em;
   }
 }
 
