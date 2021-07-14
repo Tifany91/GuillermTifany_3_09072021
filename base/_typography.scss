@@ -17,16 +17,18 @@ body {
   font-family: roboto;
 }
 
-h1 {
-  font-family: roboto-bold;
-  @include desktop-only {
-    font-size: 2em;
+#presentation {
+  h1 {
+    font-family: roboto-bold;
+    @include desktop-only {
+      font-size: 2em;
+    }
   }
-}
 
-h2 {
-  font-family: roboto-bold;
-  font-size: 1.8em;
+  h2 {
+    font-family: roboto-bold;
+    font-size: 1.8em;
+  }
 }
 
 .fbutton {
@@ -73,4 +75,12 @@ figure p {
 
 .p-bold {
   font-family: roboto-bold;
+}
+
+// PAGES RESTAURANTS
+
+#shop_title {
+  font-family: shrikhand;
+  font-size: 2.5em;
+  font-weight: normal;
 }

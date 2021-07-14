@@ -125,6 +125,7 @@
   width: 3em;
   height: 3em;
 }
+
 .empty_heart {
   position: absolute;
   color: grey;
@@ -157,5 +158,54 @@
     display: flex;
     width: 100%;
     margin-left: 2.5em;
+  }
+}
+
+// PAGES RESTAURANTS
+
+.restau_img {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.container_title_heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__restau {
+  background-color: $lightgrey;
+  border-radius: 20px;
+  h2 {
+    margin: 0;
+    font-weight: normal;
+  }
+  &__plat {
+    border-radius: 20px;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1em;
+    h4 {
+      color: rgba(64, 64, 64, 255);
+      font-weight: normal;
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+  .plate_type {
+    margin: 0 0 0 1.5em;
+    border-bottom: 5px solid $tertiary;
+    width: 4.5em;
+    color: rgba(92, 92, 92, 255);
+  }
+  .container_secondline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

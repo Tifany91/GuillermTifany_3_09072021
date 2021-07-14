@@ -21,17 +21,17 @@ body {
   font-family: roboto;
 }
 
-h1 {
+#presentation h1 {
   font-family: roboto-bold;
 }
 
 @media screen and (min-width: 1200px) {
-  h1 {
+  #presentation h1 {
     font-size: 2em;
   }
 }
 
-h2 {
+#presentation h2 {
   font-family: roboto-bold;
   font-size: 1.8em;
 }
@@ -95,6 +95,12 @@ figure p {
 
 .p-bold {
   font-family: roboto-bold;
+}
+
+#shop_title {
+  font-family: shrikhand;
+  font-size: 2.5em;
+  font-weight: normal;
 }
 
 .exploration_button {
@@ -247,6 +253,18 @@ header {
   margin-left: 1em;
   width: 8em;
   background-color: #eaeaea;
+}
+
+header {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header i {
+  position: absolute;
+  left: 0;
+  margin-left: 0.8em;
 }
 
 #presentation {
@@ -465,6 +483,70 @@ header {
     width: 100%;
     margin-left: 2.5em;
   }
+}
+
+.restau_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container_title_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__restau {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+.menu__restau h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.menu__restau__plat {
+  border-radius: 20px;
+  background-color: white;
+  margin: 1.5em;
+  padding: 1em;
+}
+
+.menu__restau__plat h4 {
+  color: #404040;
+  font-weight: normal;
+  margin: 0;
+}
+
+.menu__restau__plat h3 {
+  margin: 0;
+}
+
+.menu__restau .plate_type {
+  margin: 0 0 0 1.5em;
+  border-bottom: 5px solid #99e2d0;
+  width: 4.5em;
+  color: #5c5c5c;
+}
+
+.menu__restau .container_secondline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
