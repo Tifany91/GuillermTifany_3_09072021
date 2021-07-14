@@ -99,8 +99,25 @@ figure p {
 
 #shop_title {
   font-family: shrikhand;
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: normal;
+}
+
+.plate_type {
+  font-size: 0.9em;
+}
+
+.menu__restau__plat h3 {
+  font-size: 1.4em;
+}
+
+.menu__restau__plat h4 {
+  font-size: 1.2em;
+}
+
+.menu__restau__plat p {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .exploration_button {
@@ -132,8 +149,8 @@ figure p {
       justify-content: space-around;
   background-color: #f6f6f6;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 10px -1px #c7c5c5;
-          box-shadow: 3px 3px 10px -1px #c7c5c5;
+  -webkit-box-shadow: 3px 3px 10px -1px #d8d5d5;
+          box-shadow: 3px 3px 10px -1px #d8d5d5;
   padding: 1.5em;
   margin-bottom: 1.5em;
   margin-left: 1em;
@@ -155,8 +172,8 @@ figure p {
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
   background-color: #fbfbfb;
-  -webkit-box-shadow: 3px 3px 10px -1px #aeabab;
-          box-shadow: 3px 3px 10px -1px #aeabab;
+  -webkit-box-shadow: 3px 3px 10px -1px #bfbbbb;
+          box-shadow: 3px 3px 10px -1px #bfbbbb;
   cursor: pointer;
 }
 
@@ -197,6 +214,36 @@ figure p {
     height: 2.5em;
     bottom: 0.7em;
   }
+}
+
+.order_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 165px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 10px -1px #d8d5d5;
+          box-shadow: 3px 3px 10px -1px #d8d5d5;
+  padding: 1em 1.4em 1em 1.4em;
+}
+
+.order_button:hover {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-box-shadow: 3px 3px 10px -1px #a7a0a0;
+          box-shadow: 3px 3px 10px -1px #a7a0a0;
+  cursor: pointer;
 }
 
 header {
@@ -349,8 +396,8 @@ header i {
   overflow: hidden;
   height: 300px;
   background: white;
-  -webkit-box-shadow: 3px 3px 10px -1px #969494;
-          box-shadow: 3px 3px 10px -1px #969494;
+  -webkit-box-shadow: 3px 3px 10px -1px #d8d5d5;
+          box-shadow: 3px 3px 10px -1px #d8d5d5;
   margin-bottom: 1.5em;
   cursor: pointer;
   position: relative;
@@ -486,36 +533,43 @@ header i {
 }
 
 .restau_img img {
-  width: 100%;
+  width: 100vw;
+  height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.container_title_heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__restau {
   background-color: #f6f6f6;
   border-radius: 20px;
+  padding-bottom: 6em;
 }
 
-.menu__restau h2 {
-  margin: 0;
-  font-weight: normal;
+.menu__restau .container_title_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1.5em;
+  padding-left: 0.3em;
+}
+
+.menu__restau .container_title_heart .heart_container2 {
+  width: 2em;
+  min-width: 2em;
+  height: 2em;
+  min-height: 2em;
 }
 
 .menu__restau__plat {
   border-radius: 20px;
   background-color: white;
+  -webkit-box-shadow: 1px 1px 15px #d8d5d5;
+          box-shadow: 1px 1px 15px #d8d5d5;
   margin: 1.5em;
   padding: 1em;
 }
@@ -530,11 +584,24 @@ header i {
   margin: 0;
 }
 
+.menu__restau__plat h4,
+.menu__restau__plat p {
+  margin: 0.2em 0 0 0;
+}
+
 .menu__restau .plate_type {
-  margin: 0 0 0 1.5em;
-  border-bottom: 5px solid #99e2d0;
-  width: 4.5em;
+  margin-left: 1.5em;
   color: #5c5c5c;
+}
+
+.menu__restau .plate_type h2 {
+  margin: 0 0 0.4em 0;
+  font-weight: normal;
+}
+
+.menu__restau .plate_type .up-border {
+  border-bottom: 5px solid #99e2d0;
+  width: 3.8em;
 }
 
 .menu__restau .container_secondline {
