@@ -310,6 +310,7 @@ header {
 }
 
 header i {
+  color: black;
   position: absolute;
   left: 0;
   margin-left: 0.8em;
@@ -533,6 +534,10 @@ header i {
   }
 }
 
+.restau_img {
+  position: absolute;
+}
+
 .restau_img img {
   width: 100vw;
   height: 50vh;
@@ -627,10 +632,30 @@ header i {
           animation-delay: 1800ms;
 }
 
+@-webkit-keyframes selectanimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes selectanimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .menu__restau {
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 50px;
   padding-bottom: 5em;
+  margin-top: 17em;
+  position: relative;
 }
 
 .menu__restau .container_title_heart {
@@ -644,6 +669,14 @@ header i {
           align-items: center;
   padding-right: 1.5em;
   padding-left: 0.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__restau .container_title_heart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .menu__restau .container_title_heart .heart_container2 {
@@ -665,21 +698,41 @@ header i {
           animation: fade-in 1350ms forwards;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu__restau__plat {
+    margin-right: 28em;
+    margin-left: 28em;
+  }
+}
+
+.menu__restau__plat .select_animation {
+  display: none;
+}
+
 .menu__restau__plat:hover {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.menu__restau__plat:hover .selection_animation {
+.menu__restau__plat:hover .select_animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5em;
   background-color: #99e2d0;
+  overflow: hidden;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
-  -webkit-transform: scaleX(-0.2);
-          transform: scaleX(-0.2);
-  -webkit-animation: transform ease-in-out;
-          animation: transform ease-in-out;
+  -webkit-animation: selectanimation ease-out;
+          animation: selectanimation ease-out;
 }
 
-.menu__restau__plat:hover i {
+.menu__restau__plat:hover .select_animation i {
   color: white;
   -webkit-transform: rotate(-2turn);
           transform: rotate(-2turn);
@@ -717,6 +770,12 @@ header i {
 .menu__restau .plate_type {
   margin-left: 1.5em;
   color: #5c5c5c;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__restau .plate_type {
+    margin-left: 31em;
+  }
 }
 
 .menu__restau .plate_type h2 {
