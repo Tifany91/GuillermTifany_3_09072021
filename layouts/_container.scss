@@ -177,10 +177,73 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+}
+
+.menu__restau__plat:nth-child(1) {
+  animation-delay: 0ms;
+}
+.menu__restau__plat:nth-child(2) {
+  animation-delay: 150ms;
+}
+.menu__restau__plat:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu__restau__plat:nth-child(4) {
+  animation-delay: 450ms;
+}
+.menu__restau__plat:nth-child(5) {
+  animation-delay: 600ms;
+}
+.menu__restau__plat:nth-child(6) {
+  animation-delay: 750ms;
+}
+.menu__restau__plat:nth-child(7) {
+  animation-delay: 900ms;
+}
+.menu__restau__plat:nth-child(8) {
+  animation-delay: 1050ms;
+}
+.menu__restau__plat:nth-child(9) {
+  animation-delay: 1200ms;
+}
+.menu__restau__plat:nth-child(10) {
+  animation-delay: 1350ms;
+}
+.menu__restau__plat:nth-child(11) {
+  animation-delay: 1500ms;
+}
+.menu__restau__plat:nth-child(12) {
+  animation-delay: 1650ms;
+}
+.menu__restau__plat:nth-child(13) {
+  animation-delay: 1800ms;
+}
+
+// @keyframes selectanimation {
+//   from {
+//     margin-left: 100%;
+//     width: 0%;
+//   }
+
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }
+
 .menu__restau {
   background-color: $lightgrey;
   border-radius: 20px;
-  padding-bottom: 6em;
+  padding-bottom: 5em;
 
   .container_title_heart {
     display: flex;
@@ -203,15 +266,43 @@
     box-shadow: 1px 1px 15px $shadowcolor;
     margin: 1.5em;
     padding: 1em;
+    opacity: 0;
+    animation: fade-in 1350ms forwards;
+
+    &:hover {
+      cursor: pointer;
+      .selection_animation {
+        background-color: $tertiary;
+        // overflow: hidden;
+        transform-origin: 50% 0%;
+        transform: scaleX(-0.2);
+        animation: transform ease-in-out;
+      }
+      i {
+        color: white;
+        transform: rotate(-2turn);
+        transition: transform 2s ease-in-out;
+      }
+    }
 
     h4 {
       color: rgba(64, 64, 64, 255);
       font-weight: normal;
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      width: 85%;
     }
 
     h3 {
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      width: 85%;
     }
 
     h4,
@@ -240,4 +331,10 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
