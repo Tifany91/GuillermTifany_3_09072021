@@ -288,17 +288,18 @@
       justify-content: space-between;
       .select_animation {
         display: flex;
-        width: 5em;
+        // width: 5em;
         background-color: $tertiary;
         // overflow: hidden;
         // transform-origin: 50% 0%;
         // transform: scaleX(-1);
-        animation: selectanimation 2s linear;
-        // i {
-        //   color: white;
-        //   transform: rotate(-2turn);
-        //   transition: transform 2s ease-in-out;
-        // }
+        transition: selectanimation 2s linear;
+        i {
+          color: white;
+          transform: rotate(-2turn);
+          transition: transform 2s ease-in-out;
+          transition-property: left;
+        }
       }
     }
 
