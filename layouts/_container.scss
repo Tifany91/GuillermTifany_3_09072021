@@ -170,8 +170,6 @@
 // PAGES RESTAURANTS
 
 .restau_img {
-  // z-index: 1;
-  position: absolute;
   img {
     width: 100vw;
     height: 50vh;
@@ -230,24 +228,22 @@
   animation-delay: 1800ms;
 }
 
-@keyframes selectanimation {
-  0% {
-    // margin-left: 100%;
-    width: 0%;
-  }
-  100% {
-    // margin-left: 0%;
-    width: 100%;
-  }
-}
+// @keyframes selectanimation {
+//   from {
+//     margin-left: 100%;
+//     width: 0%;
+//   }
+
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }
 
 .menu__restau {
   background-color: $lightgrey;
-  border-radius: 50px;
+  border-radius: 20px;
   padding-bottom: 5em;
-  margin-top: 17em;
-  // z-index: 2;
-  position: relative;
 
   .container_title_heart {
     display: flex;
@@ -255,9 +251,6 @@
     align-items: center;
     padding-right: 1.5em;
     padding-left: 0.3em;
-    @include desktop-only {
-      justify-content: center;
-    }
 
     .heart_container2 {
       width: 2em;
@@ -268,37 +261,63 @@
   }
 
   &__plat {
+    display: flex;
     border-radius: 20px;
+    overflow: hidden;
     background-color: white;
     box-shadow: 1px 1px 15px $shadowcolor;
     margin: 1.5em;
-    padding: 1em;
     opacity: 0;
     animation: fade-in 1350ms forwards;
-    @include desktop-only {
-      margin-right: 28em;
-      margin-left: 28em;
-    }
-    // .select_animation {
-    //   display: none;
-    // }
-    &:hover {
-      cursor: pointer;
+    cursor: pointer;
+
+    .content_container {
       display: flex;
-      justify-content: space-between;
-      .select_animation {
+      flex-direction: column;
+      flex: 5;
+      margin: 1em;
+    }
+
+    .animation_container {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      flex: 10;
+      // background-color: green;
+      position: relative;
+    }
+
+    &:hover {
+      .animation_container {
         display: flex;
-        // width: 5em;
         background-color: $tertiary;
-        // overflow: hidden;
-        // transform-origin: 50% 0%;
-        // transform: scaleX(-1);
-        transition: selectanimation 2s linear;
-        i {
-          color: white;
-          transform: rotate(-2turn);
-          transition: transform 2s ease-in-out;
-          transition-property: left;
+        animation-name: right_to_left;
+        animation-duration: 900ms;
+      }
+
+      i {
+        position: absolute;
+        left: 1.5em;
+        color: white;
+        animation-name: appear_and_rotate;
+        animation-duration: 750ms;
+      }
+
+      @keyframes right_to_left {
+        from {
+          flex: 0;
+        }
+        to {
+          flex: 3;
+        }
+      }
+
+      @keyframes appear_and_rotate {
+        0% {
+          transform: rotate(1);
+        }
+        100% {
+          transform: rotate(2turn);
         }
       }
     }
@@ -332,9 +351,6 @@
   .plate_type {
     margin-left: 1.5em;
     color: rgba(92, 92, 92, 255);
-    @include desktop-only {
-      margin-left: 31em;
-    }
 
     h2 {
       margin: 0 0 0.4em 0;

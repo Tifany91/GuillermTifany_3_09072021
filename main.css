@@ -534,10 +534,6 @@ header i {
   }
 }
 
-.restau_img {
-  position: absolute;
-}
-
 .restau_img img {
   width: 100vw;
   height: 50vh;
@@ -632,30 +628,10 @@ header i {
           animation-delay: 1800ms;
 }
 
-@-webkit-keyframes selectanimation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes selectanimation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 .menu__restau {
   background-color: #f6f6f6;
-  border-radius: 50px;
+  border-radius: 20px;
   padding-bottom: 5em;
-  margin-top: 17em;
-  position: relative;
 }
 
 .menu__restau .container_title_heart {
@@ -671,14 +647,6 @@ header i {
   padding-left: 0.3em;
 }
 
-@media screen and (min-width: 1200px) {
-  .menu__restau .container_title_heart {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .menu__restau .container_title_heart .heart_container2 {
   width: 2em;
   min-width: 2em;
@@ -687,59 +655,115 @@ header i {
 }
 
 .menu__restau__plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 20px;
+  overflow: hidden;
   background-color: white;
   -webkit-box-shadow: 1px 1px 15px #d8d5d5;
           box-shadow: 1px 1px 15px #d8d5d5;
   margin: 1.5em;
-  padding: 1em;
   opacity: 0;
   -webkit-animation: fade-in 1350ms forwards;
           animation: fade-in 1350ms forwards;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
-  .menu__restau__plat {
-    margin-right: 28em;
-    margin-left: 28em;
+.menu__restau__plat .content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  margin: 1em;
+}
+
+.menu__restau__plat .animation_container {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  position: relative;
+}
+
+.menu__restau__plat:hover .animation_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #99e2d0;
+  -webkit-animation-name: right_to_left;
+          animation-name: right_to_left;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
+}
+
+.menu__restau__plat:hover i {
+  position: absolute;
+  left: 1.5em;
+  color: white;
+  -webkit-animation-name: appear_and_rotate;
+          animation-name: appear_and_rotate;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+}
+
+@-webkit-keyframes right_to_left {
+  from {
+    -webkit-box-flex: 0;
+            flex: 0;
+  }
+  to {
+    -webkit-box-flex: 3;
+            flex: 3;
   }
 }
 
-.menu__restau__plat .select_animation {
-  display: none;
+@keyframes right_to_left {
+  from {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  to {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
 }
 
-.menu__restau__plat:hover {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@-webkit-keyframes appear_and_rotate {
+  0% {
+    -webkit-transform: rotate(1);
+            transform: rotate(1);
+  }
+  100% {
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+  }
 }
 
-.menu__restau__plat:hover .select_animation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 5em;
-  background-color: #99e2d0;
-  overflow: hidden;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: selectanimation ease-out;
-          animation: selectanimation ease-out;
-}
-
-.menu__restau__plat:hover .select_animation i {
-  color: white;
-  -webkit-transform: rotate(-2turn);
-          transform: rotate(-2turn);
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+@keyframes appear_and_rotate {
+  0% {
+    -webkit-transform: rotate(1);
+            transform: rotate(1);
+  }
+  100% {
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+  }
 }
 
 .menu__restau__plat h4 {
@@ -770,12 +794,6 @@ header i {
 .menu__restau .plate_type {
   margin-left: 1.5em;
   color: #5c5c5c;
-}
-
-@media screen and (min-width: 1200px) {
-  .menu__restau .plate_type {
-    margin-left: 31em;
-  }
 }
 
 .menu__restau .plate_type h2 {
