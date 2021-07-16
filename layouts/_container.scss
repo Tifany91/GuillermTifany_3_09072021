@@ -291,16 +291,19 @@
       .animation_container {
         display: flex;
         background-color: $tertiary;
-        animation-name: right_to_left;
-        animation-duration: 900ms;
+        // animation-name: right_to_left;
+        // animation-duration: 900ms;
+        animation: right_to_left 900ms forwards;
       }
 
       i {
         position: absolute;
         left: 1.5em;
         color: white;
-        animation-name: appear_and_rotate;
-        animation-duration: 750ms;
+        // text-align: center;
+        // animation-name: appear_and_rotate;
+        // animation-duration: 750ms;
+        animation: appear_and_rotate 800ms forwards;
       }
 
       @keyframes right_to_left {
@@ -308,16 +311,21 @@
           flex: 0;
         }
         to {
-          flex: 3;
+          flex: 2;
         }
       }
 
       @keyframes appear_and_rotate {
         0% {
           transform: rotate(1);
+          // right: 1px;
+          // margin-left: 0;
         }
         100% {
           transform: rotate(2turn);
+          // right: 20px;
+          // margin-left: -0.5em;
+          // text-align: center;
         }
       }
     }
@@ -325,12 +333,11 @@
     h4 {
       color: rgba(64, 64, 64, 255);
       font-weight: normal;
-      margin: 0;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       display: block;
-      width: 85%;
+      width: 90%;
     }
 
     h3 {
@@ -339,7 +346,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: block;
-      width: 85%;
+      width: 90%;
     }
 
     h4,

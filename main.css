@@ -704,20 +704,16 @@ header i {
   display: -ms-flexbox;
   display: flex;
   background-color: #99e2d0;
-  -webkit-animation-name: right_to_left;
-          animation-name: right_to_left;
-  -webkit-animation-duration: 900ms;
-          animation-duration: 900ms;
+  -webkit-animation: right_to_left 900ms forwards;
+          animation: right_to_left 900ms forwards;
 }
 
 .menu__restau__plat:hover i {
   position: absolute;
   left: 1.5em;
   color: white;
-  -webkit-animation-name: appear_and_rotate;
-          animation-name: appear_and_rotate;
-  -webkit-animation-duration: 750ms;
-          animation-duration: 750ms;
+  -webkit-animation: appear_and_rotate 800ms forwards;
+          animation: appear_and_rotate 800ms forwards;
 }
 
 @-webkit-keyframes right_to_left {
@@ -726,8 +722,8 @@ header i {
             flex: 0;
   }
   to {
-    -webkit-box-flex: 3;
-            flex: 3;
+    -webkit-box-flex: 2;
+            flex: 2;
   }
 }
 
@@ -738,9 +734,9 @@ header i {
             flex: 0;
   }
   to {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 
@@ -769,12 +765,11 @@ header i {
 .menu__restau__plat h4 {
   color: #404040;
   font-weight: normal;
-  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  width: 85%;
+  width: 90%;
 }
 
 .menu__restau__plat h3 {
@@ -783,7 +778,7 @@ header i {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  width: 85%;
+  width: 90%;
 }
 
 .menu__restau__plat h4,
