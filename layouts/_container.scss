@@ -228,22 +228,19 @@
   animation-delay: 1800ms;
 }
 
-// @keyframes selectanimation {
-//   from {
-//     margin-left: 100%;
-//     width: 0%;
-//   }
-
-//   to {
-//     margin-left: 0%;
-//     width: 100%;
-//   }
-// }
+.menu__restau__plat:nth-child(14) {
+  animation-delay: 1950ms;
+}
 
 .menu__restau {
   background-color: $lightgrey;
   border-radius: 20px;
   padding-bottom: 5em;
+
+  @include desktop-only {
+    margin-left: 25em;
+    margin-right: 25em;
+  }
 
   .container_title_heart {
     display: flex;
@@ -274,7 +271,7 @@
     .content_container {
       display: flex;
       flex-direction: column;
-      flex: 5;
+      flex: 4;
       margin: 1em;
     }
 
@@ -283,7 +280,6 @@
       flex-direction: row;
       align-items: center;
       flex: 10;
-      // background-color: green;
       position: relative;
     }
 
@@ -298,7 +294,7 @@
 
       i {
         position: absolute;
-        left: 1.5em;
+        left: 50%;
         color: white;
         // text-align: center;
         // animation-name: appear_and_rotate;
@@ -311,7 +307,7 @@
           flex: 0;
         }
         to {
-          flex: 2;
+          flex: 1;
         }
       }
 
