@@ -8,9 +8,10 @@
   padding: 1em 1.4em 1em 1.4em;
   margin-bottom: 1.5em;
   &:hover {
-    transition-duration: 500ms;
+    transition-duration: 400ms;
     box-shadow: 3px 3px 10px -1px darken(rgb(150, 148, 148), 20%);
     cursor: pointer;
+    opacity: 0.8;
   }
 }
 
@@ -32,7 +33,7 @@
   }
   &:hover {
     transition-duration: 500ms;
-    background-color: lighten($lightgrey, 2%);
+    background-color: lighten($primary, 35%);
     box-shadow: 3px 3px 10px -1px darken($shadowcolor, 10%);
     cursor: pointer;
     i {
@@ -80,8 +81,9 @@
   padding: 1em 1.4em 1em 1.4em;
   margin-top: 1.5em;
   &:hover {
-    transition-duration: 500ms;
+    transition-duration: 400ms;
     box-shadow: 3px 3px 10px -1px darken($shadowcolor, 20%);
     cursor: pointer;
+    opacity: 0.8;
   }
 }

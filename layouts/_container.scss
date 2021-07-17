@@ -236,6 +236,8 @@
   background-color: $lightgrey;
   border-radius: 20px;
   padding-bottom: 5em;
+  position: relative;
+  margin-top: -50px;
 
   @include desktop-only {
     margin-left: 25em;
@@ -273,6 +275,33 @@
       flex-direction: column;
       flex: 4;
       margin: 1em;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      h3 {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+
+      .container_secondline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+          color: rgba(64, 64, 64, 255);
+          font-weight: normal;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 80%;
+        }
+      }
     }
 
     .animation_container {
@@ -287,18 +316,13 @@
       .animation_container {
         display: flex;
         background-color: $tertiary;
-        // animation-name: right_to_left;
-        // animation-duration: 900ms;
         animation: right_to_left 900ms forwards;
       }
 
       i {
         position: absolute;
-        left: 50%;
+        left: calc(50% - 0.5em);
         color: white;
-        // text-align: center;
-        // animation-name: appear_and_rotate;
-        // animation-duration: 750ms;
         animation: appear_and_rotate 800ms forwards;
       }
 
@@ -318,31 +342,12 @@
           // margin-left: 0;
         }
         100% {
-          transform: rotate(2turn);
+          transform: rotate(1turn);
           // right: 20px;
           // margin-left: -0.5em;
           // text-align: center;
         }
       }
-    }
-
-    h4 {
-      color: rgba(64, 64, 64, 255);
-      font-weight: normal;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: block;
-      width: 90%;
-    }
-
-    h3 {
-      margin: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: block;
-      width: 90%;
     }
 
     h4,
@@ -365,16 +370,69 @@
       width: 3.8em;
     }
   }
-
-  .container_secondline {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .button_container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.load_container {
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  animation: website 3s linear;
+}
+
+.load {
+  box-sizing: border-box;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: wait;
+}
+
+.load_inner {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  border: 2rem solid $tertiary;
+  border-radius: 50%;
+  border-top-color: darken($tertiary, 15%);
+  border-bottom-color: darken($tertiary, 15%);
+  animation: rotate 3s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(180deg);
+  }
+
+  50% {
+    transform: scale(0.5) rotate(-180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes website {
+  0% {
+    z-index: 30;
+  }
+
+  100% {
+    z-index: -1;
+  }
+}
+
+.website {
+  z-index: 1;
+  position: relative;
+  background-color: white;
 }
