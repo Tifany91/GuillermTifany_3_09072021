@@ -158,7 +158,14 @@ figure p {
   position: relative;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .fbutton {
+    width: 400px;
+    margin: 0 0 1.5em 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .fbutton {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -351,10 +358,44 @@ header i {
   padding: 1.5em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   #fonctionnement {
     margin: 1em 2.5em 1em 2.5em;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  #fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  #fonctionnement .fonctionnement__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px;
+    margin: 0 0 1.5em -4em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #fonctionnement h2 {
+    margin-bottom: 1.5em;
   }
 }
 
@@ -417,9 +458,9 @@ header i {
 
 @media screen and (min-width: 1200px) {
   .restaurants__card {
-    width: 270px;
-    height: 220px;
-    margin: 0;
+    width: 43vh;
+    height: 225px;
+    margin: 0 0.5 0.5 0;
   }
 }
 
@@ -537,8 +578,8 @@ header i {
 }
 
 .restau_img img {
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -643,10 +684,22 @@ header i {
   margin-top: -50px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .menu__restau {
-    margin-left: 25em;
-    margin-right: 25em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -20px;
   }
 }
 
@@ -661,6 +714,18 @@ header i {
           align-items: center;
   padding-right: 1.5em;
   padding-left: 0.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__restau .container_title_heart {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .menu__restau .container_title_heart {
+    width: 450px;
+  }
 }
 
 .menu__restau .container_title_heart .heart_container2 {
@@ -684,6 +749,18 @@ header i {
   -webkit-animation: fade-in 1350ms forwards;
           animation: fade-in 1350ms forwards;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__restau__plat {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .menu__restau__plat {
+    width: 450px;
+  }
 }
 
 .menu__restau__plat .content_container {
@@ -732,84 +809,6 @@ header i {
   width: 80%;
 }
 
-.menu__restau__plat .animation_container {
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 10;
-      -ms-flex: 10;
-          flex: 10;
-  position: relative;
-}
-
-.menu__restau__plat:hover .animation_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #99e2d0;
-  -webkit-animation: right_to_left 900ms forwards;
-          animation: right_to_left 900ms forwards;
-}
-
-.menu__restau__plat:hover i {
-  position: absolute;
-  left: calc(50% - 0.5em);
-  color: white;
-  -webkit-animation: appear_and_rotate 800ms forwards;
-          animation: appear_and_rotate 800ms forwards;
-}
-
-@-webkit-keyframes right_to_left {
-  from {
-    -webkit-box-flex: 0;
-            flex: 0;
-  }
-  to {
-    -webkit-box-flex: 1;
-            flex: 1;
-  }
-}
-
-@keyframes right_to_left {
-  from {
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
-  }
-  to {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-}
-
-@-webkit-keyframes appear_and_rotate {
-  0% {
-    -webkit-transform: rotate(1);
-            transform: rotate(1);
-  }
-  100% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
-@keyframes appear_and_rotate {
-  0% {
-    -webkit-transform: rotate(1);
-            transform: rotate(1);
-  }
-  100% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
 .menu__restau__plat h4,
 .menu__restau__plat p {
   margin: 0.2em 0 0 0;
@@ -818,6 +817,18 @@ header i {
 .menu__restau .plate_type {
   margin-left: 1.5em;
   color: #5c5c5c;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__restau .plate_type {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .menu__restau .plate_type {
+    width: 450px;
+  }
 }
 
 .menu__restau .plate_type h2 {
@@ -845,8 +856,8 @@ header i {
 .load_container {
   position: absolute;
   background-color: white;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-animation: website 3s linear;
           animation: website 3s linear;
 }
@@ -911,6 +922,7 @@ header i {
   }
   100% {
     z-index: -1;
+    height: 100%;
   }
 }
 
@@ -920,6 +932,7 @@ header i {
   }
   100% {
     z-index: -1;
+    height: 100%;
   }
 }
 
