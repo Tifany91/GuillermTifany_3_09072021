@@ -44,16 +44,20 @@ body {
   font-size: 1em;
 }
 
-figcaption {
-  font-size: 1.3em;
-  font-family: roboto-bold;
-  color: black;
-  @include desktop-only {
-    font-size: 1em;
+.restaurants__card__description {
+  h3 {
+    font-size: 1.4em;
+    font-family: roboto-bold;
+    color: black;
+    margin: 0;
+    @include desktop-only {
+      font-size: 1em;
+    }
   }
 }
+
 figure p {
-  font-size: 1.4em;
+  font-size: 1.3em;
   @include desktop-only {
     font-size: 1em;
   }
@@ -81,7 +85,7 @@ figure p {
 
 #shop_title {
   font-family: shrikhand;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: normal;
 }
 
