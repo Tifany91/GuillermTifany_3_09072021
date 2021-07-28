@@ -74,8 +74,8 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 20px;
-    margin: 2.5em;
+    // border-radius: 20px;
+    // margin: 2.5em;
     padding: 2.5em;
   }
   @include tablet-only {
@@ -129,6 +129,7 @@
       align-items: center;
       top: 1em;
       right: 1em;
+      border-radius: 2px;
     }
 
     figure {
@@ -354,52 +355,6 @@
     }
   }
 
-  .animation_container {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    flex: 10;
-    position: relative;
-  }
-
-  &:hover {
-    .animation_container {
-      display: flex;
-      background-color: $tertiary;
-      animation: right_to_left 900ms forwards;
-    }
-
-    i {
-      position: absolute;
-      left: calc(50% - 0.5em);
-      color: white;
-      animation: appear_and_rotate 800ms forwards;
-    }
-
-    @keyframes right_to_left {
-      from {
-        flex: 0;
-      }
-      to {
-        flex: 1;
-      }
-    }
-
-    @keyframes appear_and_rotate {
-      0% {
-        transform: rotate(1);
-        // right: 1px;
-        // margin-left: 0;
-      }
-      100% {
-        transform: rotate(1turn);
-        // right: 20px;
-        // margin-left: -0.5em;
-        // text-align: center;
-      }
-    }
-  }
-
   .plate_type {
     margin-left: 1.5em;
     color: rgba(92, 92, 92, 255);
@@ -488,4 +443,52 @@
   z-index: 1;
   position: relative;
   background-color: white;
+}
+
+.menu__restau__plat {
+  .animation_container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    flex: 10;
+    position: relative;
+  }
+
+  &:hover {
+    .animation_container {
+      display: flex;
+      background-color: $tertiary;
+      animation: right_to_left 900ms forwards;
+    }
+
+    i {
+      position: absolute;
+      left: calc(50% - 0.5em);
+      color: white;
+      animation: appear_and_rotate 800ms forwards;
+    }
+
+    @keyframes right_to_left {
+      from {
+        flex: 0;
+      }
+      to {
+        flex: 1;
+      }
+    }
+
+    @keyframes appear_and_rotate {
+      0% {
+        transform: rotate(1);
+        // right: 1px;
+        // margin-left: 0;
+      }
+      100% {
+        transform: rotate(1turn);
+        // right: 20px;
+        // margin-left: -0.5em;
+        // text-align: center;
+      }
+    }
+  }
 }
