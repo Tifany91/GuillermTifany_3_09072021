@@ -78,6 +78,9 @@
     margin: 2.5em;
     padding: 2.5em;
   }
+  @include tablet-only {
+    flex-direction: column;
+  }
 
   a {
     text-decoration: none;

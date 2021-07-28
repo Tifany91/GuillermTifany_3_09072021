@@ -432,6 +432,15 @@ header i {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .restaurants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .restaurants a {
   text-decoration: none;
 }
