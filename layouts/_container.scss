@@ -264,7 +264,7 @@
   border-radius: 20px;
   padding-bottom: 5em;
   position: relative;
-  margin-top: -50px;
+  margin-top: -60px;
 
   @include deskandtab {
     display: flex;
@@ -304,7 +304,7 @@
     overflow: hidden;
     background-color: white;
     box-shadow: 1px 1px 15px $shadowcolor;
-    margin: 1.5em;
+    margin: 1em;
     opacity: 0;
     animation: fade-in 1350ms forwards;
     cursor: pointer;
@@ -356,6 +356,7 @@
   }
 
   .plate_type {
+    margin-top: 1.5em;
     margin-left: 1.5em;
     color: rgba(92, 92, 92, 255);
 
@@ -368,12 +369,12 @@
     }
 
     h2 {
-      margin: 0 0 0.4em 0;
+      margin: 0 0 0.3em 0;
       font-weight: normal;
     }
 
     .up-border {
-      border-bottom: 5px solid $tertiary;
+      border-bottom: 4px solid $tertiary;
       width: 3.8em;
     }
   }

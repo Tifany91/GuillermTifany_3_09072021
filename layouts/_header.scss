@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid white;
-  box-shadow: 0 7px 7px -9px grey;
+  box-shadow: 0 8px 9px -9px grey;
   padding-top: 2em;
   padding-bottom: 1em;
   position: relative;
@@ -39,9 +39,12 @@ header {
 
 // PAGE RESTAU
 
+#logo_header {
+  box-shadow: none;
+}
+
 header {
   border: none;
-  box-shadow: none;
   i {
     color: black;
     position: absolute;

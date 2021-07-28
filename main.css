@@ -134,8 +134,8 @@ figure p {
 }
 
 .exploration_button:hover {
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
+  -webkit-transition-duration: 400ms forwards;
+          transition-duration: 400ms forwards;
   -webkit-box-shadow: 3px 3px 10px -1px #636161;
           box-shadow: 3px 3px 10px -1px #636161;
   cursor: pointer;
@@ -248,8 +248,8 @@ figure p {
 }
 
 .order_button:hover {
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
+  -webkit-transition-duration: 400ms forwards;
+          transition-duration: 400ms forwards;
   -webkit-box-shadow: 3px 3px 10px -1px #a7a0a0;
           box-shadow: 3px 3px 10px -1px #a7a0a0;
   cursor: pointer;
@@ -264,8 +264,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: 2px solid white;
-  -webkit-box-shadow: 0 7px 7px -9px grey;
-          box-shadow: 0 7px 7px -9px grey;
+  -webkit-box-shadow: 0 8px 9px -9px grey;
+          box-shadow: 0 8px 9px -9px grey;
   padding-top: 2em;
   padding-bottom: 1em;
   position: relative;
@@ -312,10 +312,13 @@ header {
   background-color: #eaeaea;
 }
 
-header {
-  border: none;
+#logo_header {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+header {
+  border: none;
 }
 
 header i {
@@ -689,7 +692,7 @@ header i {
   border-radius: 20px;
   padding-bottom: 5em;
   position: relative;
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -752,7 +755,7 @@ header i {
   background-color: white;
   -webkit-box-shadow: 1px 1px 15px #d8d5d5;
           box-shadow: 1px 1px 15px #d8d5d5;
-  margin: 1.5em;
+  margin: 1em;
   opacity: 0;
   -webkit-animation: fade-in 1350ms forwards;
           animation: fade-in 1350ms forwards;
@@ -823,6 +826,7 @@ header i {
 }
 
 .menu__restau .plate_type {
+  margin-top: 1.5em;
   margin-left: 1.5em;
   color: #5c5c5c;
 }
@@ -840,12 +844,12 @@ header i {
 }
 
 .menu__restau .plate_type h2 {
-  margin: 0 0 0.4em 0;
+  margin: 0 0 0.3em 0;
   font-weight: normal;
 }
 
 .menu__restau .plate_type .up-border {
-  border-bottom: 5px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
   width: 3.8em;
 }
 
@@ -1067,9 +1071,9 @@ header i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .footer i {
