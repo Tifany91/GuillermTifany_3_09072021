@@ -7,7 +7,6 @@ header {
   padding-bottom: 1em;
   position: relative;
   @include desktop-only {
-    // justify-content: start;
     border: none;
     box-shadow: none;
     padding-left: 2.5em;
@@ -20,7 +19,6 @@ header {
   padding: 1.2em;
   background-color: rgba(234, 234, 234, 255);
   @include desktop-only {
-    // justify-content: start;
     align-items: center;
     margin: 1em 2.5em 1em 2.5em;
     padding: 0.5em;

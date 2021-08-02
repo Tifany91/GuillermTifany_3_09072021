@@ -8,7 +8,6 @@
   padding: 1em 1.4em 1em 1.4em;
   margin-bottom: 1.5em;
   &:hover {
-    // transition-duration: 400ms;
     animation: 400ms forwards;
     box-shadow: 3px 3px 10px -1px darken(rgb(150, 148, 148), 20%);
     cursor: pointer;
