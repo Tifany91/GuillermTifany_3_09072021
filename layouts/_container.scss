@@ -151,10 +151,11 @@
 
 .full_heart {
   position: absolute;
-  color: $primary;
   opacity: 0;
+  color: linear-gradient(to top, $secondary, $primary);
+
   &:hover {
-    animation: remplissage 500ms ease-out;
+    animation: remplissage 500ms ease-out forwards;
   }
 }
 
@@ -240,7 +241,6 @@
 .menu__restau__plat:nth-child(13) {
   animation-delay: 1800ms;
 }
-
 .menu__restau__plat:nth-child(14) {
   animation-delay: 1950ms;
 }

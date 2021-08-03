@@ -546,13 +546,13 @@ header i {
 
 .full_heart {
   position: absolute;
-  color: #9356dc;
   opacity: 0;
+  color: linear-gradient(to top, #ff79da, #9356dc);
 }
 
 .full_heart:hover {
-  -webkit-animation: remplissage 500ms ease-out;
-          animation: remplissage 500ms ease-out;
+  -webkit-animation: remplissage 500ms ease-out forwards;
+          animation: remplissage 500ms ease-out forwards;
 }
 
 @-webkit-keyframes remplissage {
