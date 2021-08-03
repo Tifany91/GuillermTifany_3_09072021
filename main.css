@@ -547,7 +547,15 @@ header i {
 .full_heart {
   position: absolute;
   opacity: 0;
-  color: linear-gradient(to top, #ff79da, #9356dc);
+}
+
+.full_heart .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .full_heart:hover {

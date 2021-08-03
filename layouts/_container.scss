@@ -152,7 +152,14 @@
 .full_heart {
   position: absolute;
   opacity: 0;
-  color: linear-gradient(to top, $secondary, $primary);
+
+  .fas {
+    background: linear-gradient($primary, $secondary);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   &:hover {
     animation: remplissage 500ms ease-out forwards;
